@@ -6,6 +6,19 @@ group :development do
   gem 'sqlite3', '1.3.5'
 end
 
+gem "rspec-rails", ">= 2.8.0.rc1", :group => [:development, :test]
+
+group :test do
+  gem "factory_girl_rails", ">= 1.3.0" 
+  gem "cucumber-rails", ">= 1.1.1"
+  gem "capybara", ">= 1.1.1" 
+  gem "database_cleaner", ">= 0.6.7" 
+  gem 'simplecov', :require => false
+  gem "launchy", ">= 2.0.5" 
+  # Pretty printed test output
+  gem 'turn', '< 0.8.3', :require => false
+end
+gem 'mysql'
 
 # Gems used only for assets and not required
 # in production environments by default.
