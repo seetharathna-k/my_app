@@ -6,9 +6,10 @@ group :development do
   gem 'sqlite3', '1.3.5'
 end
 
-gem "rspec-rails", ">= 2.8.0.rc1", :group => [:development, :test]
+#gem "rspec-rails", ">= 2.8.0.rc1", :group => [:development, #test]
 
 group :test do
+  gem "rspec-rails", ">= 2.8.0.rc1"
   gem "factory_girl_rails", ">= 1.3.0" 
   gem "cucumber-rails", ">= 1.1.1"
   gem "capybara", ">= 1.1.1" 
