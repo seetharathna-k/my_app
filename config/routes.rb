@@ -1,4 +1,6 @@
 ExampleApp::Application.routes.draw do
+  get "sessions/new"
+
   get "static_pages/home"
 
   get "static_pages/help"
