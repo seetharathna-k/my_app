@@ -21,6 +21,8 @@ group :test do
   gem 'turn', '< 0.8.3', :require => false
 end
 
+gem 'bcrypt-ruby', '3.0.1'
+
 
 gem 'mysql'
 
